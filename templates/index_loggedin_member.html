@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home (Member)</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container" style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap">
+      <h1 style="font-size:1.1rem;margin:0">Warwick SU — Clubs & Rooms (Frontend Demo)</h1>
+      <nav style="width:100%">
+        <a href="index.html">Home</a>
+        <a href="rooms.html">Rooms</a>
+        <a href="schedule.html">Schedule</a>
+        <span class="spacer"></span>
+        <a href="login.html">Login</a>
+        <a class="primary" href="register.html">Register</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <div class="grid cols-2">
+  <section class="card">
+    <h2>Overview</h2>
+    <p>Browse rooms and daily schedules. Executives can book rooms for their clubs.</p>
+    <a class="btn primary" href="schedule.html">View Today's Schedule</a>
+    <a class="btn" href="rooms.html">Browse Rooms</a>
+  </section>
+  <section class="card">
+    <h2>Your Clubs</h2>
+    <ul>
+      <li><strong>Chess Society</strong> <span class="badge exec">EXEC</span> <div class="notice">Play and learn chess.</div></li>
+      <li><strong>Dance Club</strong> <span class="badge member">MEMBER</span> <div class="notice">All styles welcome.</div></li>
+    </ul>
+    <p class="notice">※ 实际上线时，这里将从后端动态读取用户的社团与角色。</p>
+  </section>
+</div>
+<section class="card">
+  <h2>Upcoming Bookings</h2>
+  <table class="table">
+    <tr><th>Title</th><th>Club</th><th>Room</th><th>Start</th><th>End</th></tr>
+    <tr><td>Weekly Club Night</td><td>Chess Society</td><td>SU-101</td><td>2025-09-04 18:00</td><td>2025-09-04 20:00</td></tr>
+  </table>
+  <div class="notice">※ 上线后这里也将由后端填充。</div>
+</section>
+
+  </main>
+  <footer class="container">
+    <small>© 2025 University of Warwick (demo)</small>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Book a Room</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <header>
+    <div class="container" style="display:flex;align-items:center;gap:1rem;flex-wrap:wrap">
+      <h1 style="font-size:1.1rem;margin:0">Warwick SU — Clubs & Rooms (Frontend Demo)</h1>
+      <nav style="width:100%">
+        <a href="index.html">Home</a>
+        <a href="rooms.html">Rooms</a>
+        <a href="schedule.html">Schedule</a>
+        <span class="spacer"></span>
+        <a href="login.html">Login</a>
+        <a class="primary" href="register.html">Register</a>
+      </nav>
+    </div>
+  </header>
+  <main class="container">
+    <section class="card">
+  <h2>Book a Room</h2>
+  <p class="notice">当前页面为静态演示。接入后端时，仅对“Exec”用户开放。</p>
+  <form class="form">
+    <label>Title <input name="title" required></label>
+    <label>Club
+      <select name="club_id" required>
+        <option>Chess Society</option>
+        <option>Dance Club</option>
+      </select>
+    </label>
+    <label>Room
+      <select name="room_id" required>
+        <option>SU-101 (cap 30)</option>
+        <option>SU-201 (cap 50)</option>
+      </select>
+    </label>
+    <div class="grid cols-2">
+      <label>Date <input type="date" required></label>
+      <div style="display:flex;gap:.5rem">
+        <label style="flex:1">Start <input type="time" required></label>
+        <label style="flex:1">End <input type="time" required></label>
+      </div>
+    </div>
+    <a class="btn primary" href="#">Create Booking</a>
+  </form>
+</section>
+
+  </main>
+  <footer class="container">
+    <small>© 2025 University of Warwick (demo)</small>
+  </footer>
+</body>
+</html>
